@@ -50,6 +50,6 @@ MERN stands for MongoDB, Express, React, Node.
 
 ## Source
 
-- This project is inspired by [MERN Stack Front To Back: Full Stack React, Redux & Node.js on Udemy by Brad Traversy](https://github.com/bradtraversy/devconnector_2.0).
-
 - [Basic writing and formatting syntax on GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+- This project is inspired by [MERN Stack Front To Back: Full Stack React, Redux & Node.js on Udemy by Brad Traversy](https://github.com/bradtraversy/devconnector_2.0).
