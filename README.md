@@ -30,13 +30,31 @@ MERN stands for MongoDB, Express, React, Node.
 
 - [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send request using POST on you local host `http://localhost:5000`.
 
-## Features
+- To check if a user has been registered, go to [MongoDB](https://www.mongodb.com/): `Atlas -> Browse Collections`.
+
+## Functionalities
+
+### Users
+
+- Register users with name, email, password
+
+### Authentication
+
+### Authorization
 
 ## Technology
 
 ### Platform
 
+- [Virtual Studio](https://visualstudio.microsoft.com/)
+
 ### Front-end
+
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - a high-level, interpreted programming language
+
+### Middleware
+
+- [express-validator](https://express-validator.github.io/docs/) - a set of express.js middlewares that wraps validator.js validator and sanitizer functions.
 
 ### Back-end
 
@@ -51,5 +69,7 @@ MERN stands for MongoDB, Express, React, Node.
 ## Source
 
 - [Basic writing and formatting syntax on GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+- [Remove .DS_Store from a Git Repository](https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository)
 
 - This project is inspired by [MERN Stack Front To Back: Full Stack React, Redux & Node.js on Udemy by Brad Traversy](https://github.com/bradtraversy/devconnector_2.0).
