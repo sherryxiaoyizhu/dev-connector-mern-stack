@@ -4,9 +4,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 ## Stack
 
-[MERN Stack](https://www.mongodb.com/mern-stack)
-
-MERN stands for MongoDB, Express, React, Node.
+[MERN Stack](https://www.mongodb.com/mern-stack) - stands for MongoDB, Express, React, Node.
 
 - MongoDB - document database
 - Express(.js) - Node.js web framework
@@ -36,9 +34,11 @@ MERN stands for MongoDB, Express, React, Node.
 
 ### Users
 
-- Register users with name, email, password
+- Register users with name, valid email & password
 
 ### Authentication
+
+- [JWT](https://jwt.io/) - allows you to decode, verify and generate JSON Web Token ([JWT](https://github.com/auth0/node-jsonwebtoken)).
 
 ### Authorization
 
@@ -46,11 +46,11 @@ MERN stands for MongoDB, Express, React, Node.
 
 ### Platform
 
-- [Virtual Studio](https://visualstudio.microsoft.com/)
+- [Virtual Studio](https://visualstudio.microsoft.com/) - an integrated development environment from Microsoft.
 
 ### Front-end
 
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - a high-level, interpreted programming language
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - a high-level, interpreted programming language.
 
 ### Middleware
 
@@ -72,4 +72,4 @@ MERN stands for MongoDB, Express, React, Node.
 
 - [Remove .DS_Store from a Git Repository](https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository)
 
-- This project is inspired by [MERN Stack Front To Back: Full Stack React, Redux & Node.js on Udemy by Brad Traversy](https://github.com/bradtraversy/devconnector_2.0).
+- This project is inspired by [MERN Stack Front To Back: Full Stack React, Redux & Node.js](https://github.com/bradtraversy/devconnector_2.0) on Udemy by Brad Traversy.
