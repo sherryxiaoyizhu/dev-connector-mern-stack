@@ -30,6 +30,8 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 - To check if a user has been registered, go to [MongoDB](https://www.mongodb.com/): `Atlas -> Browse Collections`.
 
+- To kill a process: Run `ps aux | grep npm` to get the process ID, then do `kill -9 [PID]`.
+
 ## Functionalities
 
 ### Users
