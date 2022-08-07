@@ -32,6 +32,8 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 - To kill a process: Run `ps aux | grep npm` to get the process ID, then do `kill -9 [PID]`.
 
+- [Create an OAuth App on GitHub](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)
+
 ## Functionalities
 
 ### Users
@@ -45,6 +47,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - Get all profiles & profile by user ID
 - Delete profile & user
 - Add and delete experience & education
+- Get GitHub repos for profile
 
 ### Authentication
 
