@@ -17,7 +17,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 - Install [Node.js](https://nodejs.org/en/) - the npm file should be in `/usr/local/bin/npm`.
 
-- Install the dependencies:
+- Install the required dependencies:
 
   ```
   npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
@@ -26,7 +26,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 - Run nodemon: `npm run server`.
 
-- [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send request using POST on you local host `http://localhost:5000`.
+- [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send requests on you local host `http://localhost:5001`.
 
 - To check if a user has been registered, go to [MongoDB](https://www.mongodb.com/): `Atlas -> Browse Collections`.
 
@@ -44,10 +44,11 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - Create & update user profile
 - Get all profiles & profile by user ID
 - Delete profile & user
+- Add and delete experience & education
 
 ### Authentication
 
-- [JWT](https://jwt.io/) - allows you to decode, verify and generate JSON Web Token ([JWT](https://github.com/auth0/node-jsonwebtoken)).
+- [JWT](https://jwt.io/) - allows you to decode, verify and generate JSON Web Token ([JWT GitHub Repo](https://github.com/auth0/node-jsonwebtoken)).
 
 ### Authorization
 
