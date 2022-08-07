@@ -45,12 +45,12 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 #### Authorization
 
-- Only users that own the posts will be able to delete the posts
+- Only users that own the post will be able to delete and like that post
 
 ### Profile
 
-- Get current user profile
 - Create and update user profile
+- Get current user profile
 - Get all profiles & profile by user ID
 - Delete profile & user
 - Add and delete experience & education from user profile
@@ -58,7 +58,9 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 ### Post
 
-- Add post for a user
+- Add and delete post
+- Get all posts & post by ID
+- Like or unlike a post
 
 ## Technology
 
