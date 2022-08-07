@@ -38,7 +38,14 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 ### Users
 
+#### Authentication
+
 - Register users with name, valid email and password
+  - [JWT](https://jwt.io/) - decodes, verifies and generates JSON Web Token ([JWT GitHub Repo](https://github.com/auth0/node-jsonwebtoken)).
+
+#### Authorization
+
+- Only users that own the posts will be able to delete the posts
 
 ### Profile
 
@@ -52,12 +59,6 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 ### Post
 
 - Add post for a user
-
-### Authentication
-
-- [JWT](https://jwt.io/) - allows you to decode, verify and generate JSON Web Token ([JWT GitHub Repo](https://github.com/auth0/node-jsonwebtoken)).
-
-### Authorization
 
 ## Technology
 
