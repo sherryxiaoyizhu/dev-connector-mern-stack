@@ -38,16 +38,20 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 ### Users
 
-- Register users with name, valid email & password
+- Register users with name, valid email and password
 
 ### Profile
 
 - Get current user profile
-- Create & update user profile
+- Create and update user profile
 - Get all profiles & profile by user ID
 - Delete profile & user
-- Add and delete experience & education
+- Add and delete experience & education from user profile
 - Get GitHub repos for profile
+
+### Post
+
+- Add post for a user
 
 ### Authentication
 
