@@ -19,14 +19,14 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 - Install the required dependencies:
 
-  - Back-end dependencies:
+  Back-end dependencies:
 
   ```
   npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
   npm i -D nodemon concurrently
   ```
 
-  - Front-end dependencies:
+  Front-end dependencies:
 
   ```
   npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment
