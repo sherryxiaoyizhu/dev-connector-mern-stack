@@ -26,7 +26,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 - Run nodemon: `npm run server`.
 
-- [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send requests on you local host `http://localhost:5001`.
+- [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send requests on your local host `http://localhost:5001`.
 
 - To check if a user has been registered, go to [MongoDB](https://www.mongodb.com/): `Atlas -> Browse Collections`.
 
@@ -45,7 +45,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 #### Authorization
 
-- Only users that own the post will be able to delete and like that post
+- Only users that own the post will be able to delete the post, or delete comment of the post
 
 ### Profile
 
