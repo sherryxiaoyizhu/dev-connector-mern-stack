@@ -19,10 +19,15 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 - Install the required dependencies:
 
-  ```
-  npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
-  npm i -D nodemon concurrently
-  ```
+  - Back-end:
+    ```
+    npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
+    npm i -D nodemon concurrently
+    ```
+  - Front-end:
+    ```
+    npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment
+    ```
 
 - Start the server:
 
@@ -78,7 +83,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) - used to structure a web page and its content.
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - a high-level, interpreted programming language.
-- [React](https://reactjs.org/) - a free and open-source front-end JavaScript library for building user interfaces based on UI components.
+- [React](https://reactjs.org/) - an open-source front-end JavaScript library for building user interfaces based on UI components.
 
 ### Middleware
 
