@@ -24,19 +24,25 @@ DevConnector is a social network application with Node.js, Express, React, Redux
   npm i -D nodemon concurrently
   ```
 
-- Run nodemon: `npm run server`.
+- Start the server:
 
-- [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send requests on your local host `http://localhost:5001`.
+  - Run nodemon: `npm run server` to start the server on the back-end.
+  - Run `cd client`, `npm start` to start the React server on the front-end.
+  - To run both front-end and back-end servers concurrently, explicitly specify it in `package.json` and then run `npm run dev`.
+
+- [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send requests on your local host `http://localhost:5000`.
 
 - To check if a user has been registered, go to [MongoDB](https://www.mongodb.com/): `Atlas -> Browse Collections`.
 
 - To kill a process: Run `ps aux | grep npm` to get the process ID, then do `kill -9 [PID]`.
 
-- [Create an OAuth App on GitHub](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)
+- Create an [OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app) on GitHub.
+
+- Set up [React](https://reactjs.org/): `npx create-react-app client`.
 
 ## Functionalities
 
-### Users
+### User
 
 #### Authentication
 
@@ -70,7 +76,9 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 ### Front-end
 
+- [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) - used to structure a web page and its content.
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - a high-level, interpreted programming language.
+- [React](https://reactjs.org/) - a free and open-source front-end JavaScript library for building user interfaces based on UI components.
 
 ### Middleware
 
