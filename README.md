@@ -4,7 +4,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 ## Stack
 
-[MERN Stack](https://www.mongodb.com/mern-stack) - stands for MongoDB, Express, React, Node.
+[MERN Stack](https://www.mongodb.com/mern-stack) - MongoDB, Express, React, Node.
 
 - MongoDB - document database
 - Express(.js) - Node.js web framework
@@ -19,15 +19,26 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 - Install the required dependencies:
 
-  - Back-end:
-    ```
-    npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
-    npm i -D nodemon concurrently
-    ```
-  - Front-end:
-    ```
-    npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment
-    ```
+  - Back-end dependencies:
+
+  ```
+  npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
+  npm i -D nodemon concurrently
+  ```
+
+  - Front-end dependencies:
+
+  ```
+  npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment
+  ```
+
+- [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send requests on your local host `http://localhost:5000`.
+
+- To check if a user has been registered, go to [MongoDB](https://www.mongodb.com/): `Atlas -> Browse Collections`.
+
+- Create an [OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app) on GitHub.
+
+- Set up [React](https://reactjs.org/): `npx create-react-app client`.
 
 - Start the server:
 
@@ -35,15 +46,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
   - Run `cd client`, `npm start` to start the React server on the front-end.
   - To run both front-end and back-end servers concurrently, explicitly specify it in `package.json` and then run `npm run dev`.
 
-- [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send requests on your local host `http://localhost:5000`.
-
-- To check if a user has been registered, go to [MongoDB](https://www.mongodb.com/): `Atlas -> Browse Collections`.
-
 - To kill a process: Run `ps aux | grep npm` to get the process ID, then do `kill -9 [PID]`.
-
-- Create an [OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app) on GitHub.
-
-- Set up [React](https://reactjs.org/): `npx create-react-app client`.
 
 ## Functionalities
 
