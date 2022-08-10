@@ -16,15 +16,20 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - Edit in [settings.json](https://code.visualstudio.com/docs/getstarted/settings#:~:text=You%20can%20open%20the%20settings,to%20using%20the%20default%20values.).
 - Install [Node.js](https://nodejs.org/en/) - the npm file should be in `/usr/local/bin/npm`.
 - Install the required dependencies:
+
   Back-end dependencies:
+
   ```
   npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
   npm i -D nodemon concurrently
   ```
+
   Front-end dependencies:
+
   ```
   npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment
   ```
+
 - [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send requests on your local host `http://localhost:5000`.
 - To check if a user has been registered, go to [MongoDB](https://www.mongodb.com/): `Atlas -> Browse Collections`.
 - Create an [OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app) on GitHub.
