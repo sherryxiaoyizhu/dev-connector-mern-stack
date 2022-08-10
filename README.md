@@ -31,7 +31,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
   ```
 
 - [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send requests on your local host `http://localhost:5000`.
-- To check if a user has been registered, go to [MongoDB](https://www.mongodb.com/): `Atlas -> Browse Collections`.
+- To check if a user has been registered, go to [MongoDB](https://www.mongodb.com/): `Atlas` -> `Browse Collections`.
 - Create an [OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app) on GitHub.
 - Set up [React](https://reactjs.org/): `npx create-react-app client`.
 - Start the server:
