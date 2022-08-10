@@ -87,6 +87,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) - used to structure a web page and its content.
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - a high-level, interpreted programming language.
 - [React](https://reactjs.org/) - an open-source front-end JavaScript library for building user interfaces based on UI components.
+- [Font Awesome](https://fontawesome.com/) - the Internet's icon library and toolkit.
 
 ### Middleware
 
@@ -95,17 +96,12 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 ### Back-end
 
 - [Node.js](https://nodejs.org/en/) - JavaScript run-time environment that executes JavaScript code server-side.
-
 - [Postman](https://www.postman.com/) - an API platform for developers to design, build, test and iterate their APIs.
-
 - [MongoDB](https://www.mongodb.com/) - a source-available cross-platform document-oriented database program, classified as a NoSQL database program, and uses JSON-like documents with optional schemas.
-
 - [Mongoose](https://mongoosejs.com/) - an elegant mongodb object modeling for Node.js.
 
 ## Source
 
 - [Basic writing and formatting syntax on GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-
 - [Remove .DS_Store from a Git Repository](https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository)
-
 - This project is inspired by [MERN Stack Front To Back: Full Stack React, Redux & Node.js](https://github.com/bradtraversy/devconnector_2.0) on Udemy by Brad Traversy.
