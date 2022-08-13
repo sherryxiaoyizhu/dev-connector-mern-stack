@@ -80,7 +80,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - a high-level, interpreted programming language.
 - [React](https://reactjs.org/) - an open-source front-end JavaScript library for building user interfaces based on UI components.
 - [Font Awesome](https://fontawesome.com/) - the Internet's icon library and toolkit.
-- [Redux])(https://github.com/zalmoxisus/redux-devtools-extension) - an open-source JavaScript library for managing and centralizing application state (see Redux Devtool Extension Tutorials [here](https://www.youtube.com/watch?v=IlM7497j6LY)).
+- [Redux](https://github.com/zalmoxisus/redux-devtools-extension) - an open-source JavaScript library for managing and centralizing application state (see Redux Devtool Extension Tutorials [here](https://www.youtube.com/watch?v=IlM7497j6LY)).
 
 ### Middleware
 
