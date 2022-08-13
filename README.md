@@ -27,7 +27,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
   Front-end dependencies:
 
   ```
-  npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment
+  npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment uuid
   ```
 
 - [Download Postman](https://www.postman.com/downloads/) and then connect it to your PC with the Postman desktop client before you can send requests on your local host `http://localhost:5000`.
@@ -80,6 +80,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - a high-level, interpreted programming language.
 - [React](https://reactjs.org/) - an open-source front-end JavaScript library for building user interfaces based on UI components.
 - [Font Awesome](https://fontawesome.com/) - the Internet's icon library and toolkit.
+- [Redux])(https://github.com/zalmoxisus/redux-devtools-extension) - an open-source JavaScript library for managing and centralizing application state (see Redux Devtool Extension Tutorials [here](https://www.youtube.com/watch?v=IlM7497j6LY)).
 
 ### Middleware
 
@@ -92,7 +93,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - [MongoDB](https://www.mongodb.com/) - a source-available cross-platform document-oriented database program, classified as a NoSQL database program, and uses JSON-like documents with optional schemas.
 - [Mongoose](https://mongoosejs.com/) - an elegant mongodb object modeling for Node.js.
 
-## Source
+## Resources
 
 - [Basic writing and formatting syntax on GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - [Remove .DS_Store from a Git Repository](https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository)
