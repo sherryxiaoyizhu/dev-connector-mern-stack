@@ -1,35 +1,46 @@
-import axios from 'axios';
+import api from '../utils/api';
 import { setAlert } from './alert';
-import { REGISTER_SUCCESS, REGISTER_FAIL } from './types';
+import {
+  REGISTER_SUCCESS,
+  REGISTER_FAIL,
+  USER_LOADED,
+  AUTH_ERROR,
+} from './types';
 
-// Register user
-export const register =
-  ({ name, email, password }) =>
-  async (dispatch) => {
-    const config = {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    };
+// Load User
+export const loadUser = () => async (dispatch) => {
+  try {
+    const res = await api.get('/auth');
 
-    const body = JSON.stringify({ name, email, password });
+    dispatch({
+      type: USER_LOADED,
+      payload: res.data,
+    });
+  } catch (err) {
+    dispatch({
+      type: AUTH_ERROR,
+    });
+  }
+};
 
-    try {
-      const res = await axios.post('/api/users', body, config);
+// Register User
+export const register = (formData) => async (dispatch) => {
+  try {
+    const res = await api.post('/users', formData);
 
-      dispatch({
-        type: REGISTER_SUCCESS,
-        payload: res.data,
-      });
-    } catch (err) {
-      const errors = err.response.data.errors;
-      console.log('check');
-      if (errors) {
-        errors.forEach((error) => dispatch(setAlert(error.msg, 'danger')));
-      }
-
-      dispatch({
-        type: REGISTER_FAIL,
-      });
+    dispatch({
+      type: REGISTER_SUCCESS,
+      payload: res.data,
+    });
+    dispatch(loadUser());
+  } catch (err) {
+    const errors = err.response.data.errors;
+    if (errors) {
+      errors.forEach((error) => dispatch(setAlert(error.msg, 'danger')));
     }
-  };
+
+    dispatch({
+      type: REGISTER_FAIL,
+    });
+  }
+};
