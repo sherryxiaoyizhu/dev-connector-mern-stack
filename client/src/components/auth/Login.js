@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import { login } from '../../actions/auth';
 
 const Login = ({ login, isAuthenticated }) => {
@@ -13,14 +13,13 @@ const Login = ({ login, isAuthenticated }) => {
   const { email, password } = formData;
 
   const onChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value }); // copy the formData
+    setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const onSubmit = async (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
     login(email, password);
   };
 
-  // Redirect if logged in
   if (isAuthenticated) {
     return <Navigate to='/dashboard' />;
   }
