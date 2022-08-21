@@ -43,7 +43,7 @@
 - Deploy on Heroku:
   ```
   heroku login
-  heroku git:clone -a dev-connector-sherry-xzhu
+  heroku git:remote -a dev-connector-sherry-xzhu
   git add .
   git commit -am "Prepared for deployment"
   git push heroku main
