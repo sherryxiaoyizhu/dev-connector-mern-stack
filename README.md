@@ -1,6 +1,6 @@
 # DevConnector
 
-DevConnector is a social network application with Node.js, Express, React, Redux and MongoDB.
+[DevConnector](https://dev-connector-sherry-xzhu.herokuapp.com/) is a social network application with Node.js, Express, React, Redux and MongoDB.
 
 ## Stack
 
@@ -43,7 +43,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - Deploy on Heroku:
   ```
   heroku login
-  heroku git:remote -a [uid]
+  heroku git:clone -a dev-connector-sherry-xzhu
   git add .
   git commit -am "Prepared for deployment"
   git push heroku main
