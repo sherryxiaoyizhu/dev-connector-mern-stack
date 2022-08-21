@@ -5,7 +5,6 @@ const auth = require('../../middleware/auth');
 
 const Post = require('../../models/Post');
 const User = require('../../models/User');
-const Profile = require('../../models/Profile');
 
 // @route POST api/posts
 // @desc  Create a post
@@ -213,7 +212,5 @@ router.delete('/comment/:id/:comment_id', auth, async (req, res) => {
     res.status(500).send('Server error');
   }
 });
-
-// To-do: Update posts/comment
 
 module.exports = router;
