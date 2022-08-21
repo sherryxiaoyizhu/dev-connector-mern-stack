@@ -41,12 +41,11 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - Kill a process: Run `ps aux | grep npm` or `lsof -i tcp:3000` to get the process ID, then do `kill -9 [PID]`.
 - Clear the cache: Run `rm -r package-lock.json node_modules`, `npm install`.
 - Deploy on Heroku:
-
-```
-heroku git:remote -a [uid]
-git push heroku main
-heroku open
-```
+  ```
+  heroku git:remote -a [uid]
+  git push heroku main
+  heroku open
+  ```
 
 ## Functionalities
 
