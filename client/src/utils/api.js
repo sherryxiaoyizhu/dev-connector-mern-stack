@@ -5,8 +5,8 @@ import { LOGOUT } from '../actions/types';
 // Create an instance of axios
 const api = axios.create({
   // Run tests on localhost, use relative path when launching into production
-  baseURL: 'http://localhost:5001/api',
-  // baseURL: '/api',
+  //baseURL: 'http://localhost:5001/api',
+  baseURL: '/api',
   headers: {
     'Content-Type': 'application/json',
   },
