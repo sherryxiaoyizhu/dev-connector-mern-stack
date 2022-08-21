@@ -57,11 +57,16 @@ export const register = (formData) => async (dispatch) => {
 
 // Login User
 export const login = (email, password) => async (dispatch) => {
-  const body = { email, password };
+  const config = {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  };
+
+  const body = JSON.stringify({ email, password });
 
   try {
-    const res = await api.post('/auth', body);
-
+    const res = await axios.post('/api/auth', body, config);
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data,
@@ -70,11 +75,9 @@ export const login = (email, password) => async (dispatch) => {
     dispatch(loadUser());
   } catch (err) {
     const errors = err.response.data.errors;
-
     if (errors) {
       errors.forEach((error) => dispatch(setAlert(error.msg, 'danger')));
     }
-
     dispatch({
       type: LOGIN_FAIL,
     });
