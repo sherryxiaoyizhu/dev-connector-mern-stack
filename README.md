@@ -45,7 +45,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
   heroku login
   heroku git:remote -a [uid]
   git add .
-  git commit -am "make it better"
+  git commit -am "Prepared for deployment"
   git push heroku main
   heroku open
   ```
