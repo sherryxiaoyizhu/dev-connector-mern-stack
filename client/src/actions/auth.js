@@ -1,4 +1,5 @@
 import api from '../utils/api';
+import setAuthToken from '../utils/setAuthToken';
 import { setAlert } from './alert';
 import {
   REGISTER_SUCCESS,
@@ -12,6 +13,10 @@ import {
 
 // Load User
 export const loadUser = () => async (dispatch) => {
+  if (localStorage.token) {
+    setAuthToken(localStorage.token);
+  }
+
   try {
     const res = await api.get('/auth');
 
@@ -35,6 +40,7 @@ export const register = (formData) => async (dispatch) => {
       type: REGISTER_SUCCESS,
       payload: res.data,
     });
+
     dispatch(loadUser());
   } catch (err) {
     const errors = err.response.data.errors;
