@@ -9,7 +9,7 @@ const postRouter = require('./routes/api/posts');
 const authRouter = require('./routes/api/auth');
 
 // Init Middleware
-app.use(express.json({ extended: false }));
+app.use(express.json());
 
 // Connect to Database
 connectDB();

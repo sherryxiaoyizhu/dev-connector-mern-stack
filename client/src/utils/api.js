@@ -8,6 +8,10 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  // proxy: {
+  //   host: 'localhost',
+  //   port: 5001,
+  // },
 });
 
 /*

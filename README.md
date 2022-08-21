@@ -38,8 +38,15 @@ DevConnector is a social network application with Node.js, Express, React, Redux
   - Run nodemon: `npm run server` to start the server on the back-end.
   - Run `cd client`, `npm start` to start the React server on the front-end.
   - To run both front-end and back-end servers concurrently, explicitly specify it in `package.json` and then run `npm run dev`.
-- To kill a process: Run `ps aux | grep npm` or `lsof -i tcp:3000` to get the process ID, then do `kill -9 [PID]`.
-- To clear the cache: Run `rm -r package-lock.json node_modules`, `npm install`;
+- Kill a process: Run `ps aux | grep npm` or `lsof -i tcp:3000` to get the process ID, then do `kill -9 [PID]`.
+- Clear the cache: Run `rm -r package-lock.json node_modules`, `npm install`.
+- Deploy on Heroku:
+
+```
+heroku git:remote -a [uid]
+git push heroku main
+heroku open
+```
 
 ## Functionalities
 
@@ -68,6 +75,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - Add and delete post
 - Get all posts & post by ID
 - Like or unlike a post
+- Add and delete comment
 
 ## Technology
 

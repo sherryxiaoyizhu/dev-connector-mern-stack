@@ -21,27 +21,24 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
-// @route POST api/auth
-// @desc  Authenticate user & get token
-// @acess Public
+// @route    POST api/auth
+// @desc     Authenticate user & get token
+// @access   Public
 router.post(
   '/',
-  [
-    // Add middlewares
-    check('email', 'Please enter a valid email').isEmail(),
-    check('password', 'Password is required').exists(),
-  ],
+  check('email', 'Please include a valid email').isEmail(),
+  check('password', 'Password is required').exists(),
   async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() }); // 400: Bad Request
+      return res.status(400).json({ errors: errors.array() });
     }
 
     const { email, password } = req.body;
 
     try {
-      // Check authentication
       let user = await User.findOne({ email });
+
       if (!user) {
         return res
           .status(400)
@@ -49,13 +46,13 @@ router.post(
       }
 
       const isMatch = await bcrypt.compare(password, user.password);
+
       if (!isMatch) {
         return res
           .status(400)
           .json({ errors: [{ msg: 'Invalid Credentials' }] });
       }
 
-      // Return jsonwebtoken - in order to get the user logged in right away when registered
       const payload = {
         user: {
           id: user.id,
@@ -65,7 +62,7 @@ router.post(
       jwt.sign(
         payload,
         config.get('jwtSecret'),
-        { expiresIn: 360000 }, // to be updated before launch in production
+        { expiresIn: '5 days' },
         (err, token) => {
           if (err) throw err;
           res.json({ token });
