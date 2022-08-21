@@ -75,7 +75,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 
 - [Virtual Studio](https://visualstudio.microsoft.com/) - an integrated development environment from Microsoft.
 - [Heroku](https://www.heroku.com/) - a cloud platform that runs apps in virtual containers.
-- [Git](https://git-scm.com/) - an open source distributed version control system, to be used to deploy the app to Heroku.
+- [Git](https://git-scm.com/) - an open source distributed version control system, used to deploy the app to Heroku.
 
 ### Front-end
 

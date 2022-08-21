@@ -43,7 +43,7 @@ router.post(
       const avatar = gravatar.url(email, {
         s: '200',
         r: 'pg',
-        d: 'mm', // Gets a default image
+        d: 'mm', // get a default image
       });
 
       // Create a new user instance
