@@ -19,7 +19,6 @@ export const loadUser = () => async (dispatch) => {
 
   try {
     const res = await api.get('/auth');
-
     dispatch({
       type: USER_LOADED,
       payload: res.data,
@@ -61,6 +60,7 @@ export const login = (email, password) => async (dispatch) => {
 
   try {
     const res = await api.post('/auth', body);
+
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data,

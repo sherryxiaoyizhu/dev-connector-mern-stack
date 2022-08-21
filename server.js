@@ -2,11 +2,15 @@ const express = require('express');
 const connectDB = require('./config/db');
 const path = require('path');
 const app = express();
+const cors = require('cors');
 
 const userRouter = require('./routes/api/users');
 const profileRouter = require('./routes/api/profile');
 const postRouter = require('./routes/api/posts');
 const authRouter = require('./routes/api/auth');
+
+// Enable shared response
+app.use(cors());
 
 // Init Middleware
 app.use(express.json());

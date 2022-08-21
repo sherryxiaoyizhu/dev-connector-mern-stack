@@ -94,6 +94,7 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - [React](https://reactjs.org/) - an open-source front-end JavaScript library for building user interfaces based on UI components.
 - [Font Awesome](https://fontawesome.com/) - the Internet's icon library and toolkit.
 - [Redux](https://github.com/zalmoxisus/redux-devtools-extension) - an open-source JavaScript library for managing and centralizing application state (see Redux Devtool Extension Tutorials [here](https://www.youtube.com/watch?v=IlM7497j6LY)).
+- [CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS) - Cross-Origin Resource Sharing is a system, consisting of transmitting HTTP headers, that determines whether browsers block frontend JavaScript code from accessing responses for cross-origin requests.
 
 ### Middleware
 

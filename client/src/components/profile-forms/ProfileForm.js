@@ -8,7 +8,8 @@ import { createProfile, getCurrentProfile } from '../../actions/profile';
   NOTE: declare initialState outside of component
   so that it doesn't trigger a useEffect
   we can then safely use this to construct our profileData
- */
+*/
+
 const initialState = {
   company: '',
   website: '',
@@ -38,11 +39,10 @@ const ProfileForm = ({
   const navigate = useNavigate();
 
   useEffect(() => {
-    // if there is no profile, attempt to fetch one
+    // If there is no profile, attempt to fetch one
     if (!profile) getCurrentProfile();
 
-    // if we finished loading and we do have a profile
-    // then build our profileData
+    // If we finished loading and we do have a profile, then build our profileData
     if (!loading && profile) {
       const profileData = { ...initialState };
       for (const key in profile) {
@@ -51,10 +51,10 @@ const ProfileForm = ({
       for (const key in profile.social) {
         if (key in profileData) profileData[key] = profile.social[key];
       }
-      // the skills may be an array from our API response
+      // The skills may be an array from our API response
       if (Array.isArray(profileData.skills))
         profileData.skills = profileData.skills.join(', ');
-      // set local state with the profileData
+      // Set local state with the profileData
       setFormData(profileData);
     }
   }, [loading, getCurrentProfile, profile]);
