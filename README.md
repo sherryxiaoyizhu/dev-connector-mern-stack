@@ -42,7 +42,10 @@ DevConnector is a social network application with Node.js, Express, React, Redux
 - Clear the cache: Run `rm -r package-lock.json node_modules`, `npm install`.
 - Deploy on Heroku:
   ```
+  heroku login
   heroku git:remote -a [uid]
+  git add .
+  git commit -am "make it better"
   git push heroku main
   heroku open
   ```
