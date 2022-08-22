@@ -1,0 +1,6 @@
+{
+  "mongoURI": "my_mongo_uri",
+  "jwtSecret": "my_jwt_secret_token",
+  "githubClientId": "my_github_client_id",
+  "githubSecret": "my_github_secret"
+}
